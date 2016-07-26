@@ -57,7 +57,7 @@ function cpf_valido_output(){
               <p><b>Créditos:</b>
               <br/>
               - Desenvolvimento do Módulo: Luciano Zanita<br/>
-              - Colaboração javascript: Victor Hugo
+              - Colaboração javascript: Victor Hugo<br/>
               - API: <a href="http://api.bipbop.com.br/" target="_new">BipBop</a><br/>
               <center><a href="http://www.whmcs.red" target="_new"><img src="http://whmcs.red/wp-content/uploads/2016/07/whmcs-red-logo.png"></a></center>
               </p>
