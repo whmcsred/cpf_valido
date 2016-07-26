@@ -37,9 +37,6 @@ function cpf_valido_deactivate() {
  
 }
 function cpf_valido_output(){
-$versao = "1.0";
-
-
   echo '<div>
   <ul class="nav nav-tabs" role="tablist">
     <li role="presentation"'; if(array_key_exists('aut',$_GET)){ } else {  echo 'class="active"';}  echo'><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
@@ -62,7 +59,7 @@ $versao = "1.0";
               - Desenvolvimento do Módulo: Luciano Zanita<br/>
               - Colaboração javascript: Victor Hugo
               - API: <a href="http://api.bipbop.com.br/" target="_new">BipBop</a><br/>
-              <center><a href="http://www.whmcs.red" target="_new"><img src="https://raw.githubusercontent.com/whmcsred/cpf_valido/master/whmcs-red-logo.png"></a></center>
+              <center><a href="http://www.whmcs.red" target="_new"><img src="http://whmcs.red/wp-content/uploads/2016/07/whmcs-red-logo.png"></a></center>
               </p>
             </div>
           </div>
@@ -72,8 +69,9 @@ $versao = "1.0";
           <div class="panel panel-default">
             <div class="panel-heading"><i class="fa fa-shield" aria-hidden="true"></i> Verificação de Atualização</div>
             <div class="panel-body">';
-              $versaodisponivel = file_get_contents("https://raw.githubusercontent.com/whmcsred/cpf_valido/master/versao.txt");
-              if($versaodisponivel==$versao){
+              $versao = "1.0";
+              $versaodisponivel = file_get_contents("http://whmcs.red/versao/cpf_valido.txt");
+              if($versao==$versaodisponivel){
                 echo '<center><i class="fa fa-heart" aria-hidden="true"></i> Parabéns sua versão esta atualizada!</center>';
               }
               else{
