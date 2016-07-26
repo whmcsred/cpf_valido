@@ -93,7 +93,7 @@ while ($data = mysql_fetch_array($result)) {
 	$campodecpfveri = $data['campocpf'];
  }
 
-$usesql = "SELECT tblclients.id, tblclients.firstname, tblclients.lastname, tblcustomfieldsvalues.relid, tblcustomfieldsvalues.value, tblcustomfieldsvalues.fieldid FROM tblclients INNER JOIN tblcustomfieldsvalues ON tblcustomfieldsvalues.relid = tblclients.id WHERE tblcustomfieldsvalues.fieldid = '".$campodecpfveri."' OR tblcustomfieldsvalues.value = 'on' order by tblclients.firstname";
+$usesql = "SELECT tblclients.id, tblclients.firstname, tblclients.lastname, tblcustomfieldsvalues.relid, tblcustomfieldsvalues.value, tblcustomfieldsvalues.fieldid FROM tblclients INNER JOIN tblcustomfieldsvalues ON tblcustomfieldsvalues.relid = tblclients.id WHERE tblcustomfieldsvalues.fieldid = '".$campodecpfveri."' order by tblclients.firstname";
 
         $clients = '';
         $result = mysql_query($usesql);
