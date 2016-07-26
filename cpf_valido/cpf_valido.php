@@ -5,7 +5,7 @@ function cpf_valido_config() {
     "name" => "CPF Válido",
     "description" => "Consultor de CPF Válido",
     "version" => "1.0",
-    "author" => "Luciano Zanita",
+    "author" => "Luciano Zanita - WHMCS.RED",
     );
     return $configarray;
 }
@@ -60,8 +60,9 @@ $versao = "1.0";
               <p><b>Créditos:</b>
               <br/>
               - Desenvolvimento do Módulo: Luciano Zanita<br/>
-              - Oferecimento: <a href="http://www.whcms.red" target="_new">WHMCS RED</a><br/>
+              - Colaboração javascript: Victor Hugo
               - API: <a href="http://api.bipbop.com.br/" target="_new">BipBop</a><br/>
+              <center><a href="http://www.whmcs.red" target="_new"><img src="https://raw.githubusercontent.com/whmcsred/cpf_valido/master/whmcs-red-logo.png"></a></center>
               </p>
             </div>
           </div>
