@@ -18,6 +18,6 @@ Com a necessidade de verificar se pedidos são feito por pessoais reais um grand
 
 #Créditos
 1. Desenvolvimento do módulo: Luciano Zanita
-2. Colaboração em JavaScript: Victor Hugo
+2. Colaboração: Victor Hugo e Daniel Costa
 3. Módulo oficial WHMCS.RED
 4. API BipBop
