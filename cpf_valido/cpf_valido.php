@@ -4,7 +4,7 @@ function cpf_valido_config() {
     $configarray = array(
     "name" => "CPF Válido",
     "description" => "Consultor de CPF Válido",
-    "version" => "1.0",
+    "version" => "1.1",
     "author" => "Luciano Zanita - WHMCS.RED",
     );
     return $configarray;
