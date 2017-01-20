@@ -21,8 +21,6 @@ function cpf_valido_activate() {
     # Retorno
     return array('status'=>'success','description'=>'Módulo de CPF Válido foi ativo com sucesso!');
     return array('status'=>'error','description'=>'Não foi possível ativar o módulo de CPF Válido por causa de um erro desconhecido');
-    //return array('status'=>'info','description'=>'You can use the info status return to display a message to the user');
- 
 }
  
 function cpf_valido_deactivate() {
@@ -33,8 +31,6 @@ function cpf_valido_deactivate() {
     # Retorno
     return array('status'=>'success','description'=>'Módulo de CPF Válido foi desativado com sucesso!');
     return array('status'=>'error','description'=>'Não foi possível desativar o módulo de CPF Válido por causa de um erro desconhecido');
-    //return array('status'=>'info','description'=>'If you want to give an info message to a user you can return it here');
- 
 }
 function cpf_valido_output(){
   echo '<div>
@@ -57,7 +53,7 @@ function cpf_valido_output(){
               <p><b>Créditos:</b>
               <br/>
               - Desenvolvimento do Módulo: Luciano Zanita<br/>
-              - Colaboração javascript: Victor Hugo<br/>
+              - Colaboração: Victor Hugo e Daniel Costa<br/>
               - API: <a href="http://api.bipbop.com.br/" target="_new">BipBop</a><br/>
               <center><a href="http://www.whmcs.red" target="_new"><img src="http://whmcs.red/wp-content/uploads/2016/07/whmcs-red-logo.png"></a></center>
               </p>
@@ -69,7 +65,7 @@ function cpf_valido_output(){
           <div class="panel panel-default">
             <div class="panel-heading"><i class="fa fa-shield" aria-hidden="true"></i> Verificação de Atualização</div>
             <div class="panel-body">';
-              $versao = "1.0";
+              $versao = "1.1";
               $versaodisponivel = file_get_contents("http://whmcs.red/versao/cpf_valido.txt");
               if($versao==$versaodisponivel){
                 echo '<center><i class="fa fa-heart" aria-hidden="true"></i> Parabéns sua versão esta atualizada!</center>';
@@ -144,7 +140,7 @@ $usesql = "SELECT tblclients.id, tblclients.firstname, tblclients.lastname, tblc
 		        $usesql2 = "SELECT*FROM tblcustomfieldsvalues WHERE fieldid = '".$campodecpfveri."' AND relid = '".$iddaconta."'";
 		        $result = mysql_query($usesql2);
 		        while ($data2 = mysql_fetch_array($result)) {
-		        $cpfcadastrocheck 	= $data2['value'];
+		        $cpfcadastrocheck = str_replace("-", "", str_replace(".", "", str_replace("/", "", str_replace(",", "", str_replace(" ", "", $data2['value'])))));
 		        }
 		     
 				//strings
