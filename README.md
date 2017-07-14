@@ -1,6 +1,9 @@
 # CPF Válido
 Com a necessidade de verificar se pedidos são feito por pessoais reais um grande passo para autenticação disto é através de consultas de documentos como por exemplo o CPF, com o módulo CPF Válido, você será capaz de consultar através da api BipBop se o documento digitado condiz com o nome ou não, facilitando assim a autenticação de contas feitas através do WHMCS.
 
+# ATENCAO! Projeto Descontinuado
+Você usava o CPF Válido? Confira nossa melhor e maior ferramenta para o mesmo seguimento, o VALID ACCOUNT: http://www.whmcs.red/download/valid-account/
+
 #Como Instalar
 1. Envie a pasta cpf_valido para dentro da pasta /modules/addons/
 2. Acesse a administração de seu WHMCS e pelo menu navegue: Opções -> Módulos Addons
